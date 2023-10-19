@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Firebase Data to JSON</title>
+</head>
+<body>
+    <pre id="jsonData"></pre>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyCUCRsva2faxZ4wbuy6X0ElGGi2oqNmx1Q",
+        authDomain: "citsample-f366b.firebaseapp.com",
+        projectId: "citsample-f366b",
+        storageBucket: "citsample-f366b.appspot.com",
+        messagingSenderId: "131360607107",
+        appId: "1:131360607107:web:8e0af407f8d835e8f044b6"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+
+        // References to the locations in your Firebase Realtime Database
+        const studentsRef = db.ref('Students');
+        const teachersRef = db.ref('Teacher');
+        const subjectsRef = db.ref('Subjects');
+
+        // Function to retrieve and format data as JSON for all categories
+        function getDataAsJSON() {
+            const data = {};
+
+            studentsRef.once('value', (studentSnapshot) => {
+                data['Students'] = studentSnapshot.val();
+                teachersRef.once('value', (teacherSnapshot) => {
+                    data['Teachers'] = teacherSnapshot.val();
+                    subjectsRef.once('value', (subjectSnapshot) => {
+                        data['Subjects'] = subjectSnapshot.val();
+
+                        // Format the combined data as JSON
+                        const jsonData = JSON.stringify(data, null, 2); // Format with 2-space indentation
+
+                        // Display the JSON data in a <pre> element
+                        const jsonDataElement = document.getElementById('jsonData');
+                        jsonDataElement.textContent = jsonData;
+                    });
+                });
+            });
+        }
+
+        // Call the function to retrieve and display the data when the page loads
+        window.addEventListener('load', getDataAsJSON);
+    </script>
+</body>
+</html>
