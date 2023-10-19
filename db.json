@@ -1,11 +1,187 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+  "class": {
+    "name": "Information Technology Class",
+    "students": [
+      {
+        "id": 1,
+        "name": "Student 1",
+        "schedule": [
+          {
+            "day": "Monday",
+            "time": "9:00 AM - 10:30 AM",
+            "subject": "Programming",
+            "room": "Room A101"
+          },
+          {
+            "day": "Tuesday",
+            "time": "10:45 AM - 12:15 PM",
+            "subject": "Database Management",
+            "room": "Room A101"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Student 2",
+        "schedule": [
+          {
+            "day": "Monday",
+            "time": "9:00 AM - 10:30 AM",
+            "subject": "Web Development",
+            "room": "Room B202"
+          },
+          {
+            "day": "Wednesday",
+            "time": "9:00 AM - 10:30 AM",
+            "subject": "Networking",
+            "room": "Room B202"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Student 3",
+        "schedule": [
+          {
+            "day": "Tuesday",
+            "time": "1:00 PM - 2:30 PM",
+            "subject": "Software Engineering",
+            "room": "Room C303"
+          },
+          {
+            "day": "Thursday",
+            "time": "9:00 AM - 10:30 AM",
+            "subject": "Cybersecurity",
+            "room": "Room C303"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Student 4",
+        "schedule": [
+          {
+            "day": "Wednesday",
+            "time": "10:45 AM - 12:15 PM",
+            "subject": "Mobile App Development",
+            "room": "Room D404"
+          },
+          {
+            "day": "Friday",
+            "time": "10:45 AM - 12:15 PM",
+            "subject": "Data Analysis",
+            "room": "Room D404"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Student 5",
+        "schedule": [
+          {
+            "day": "Thursday",
+            "time": "9:00 AM - 10:30 AM",
+            "subject": "Algorithms",
+            "room": "Room E505"
+          },
+          {
+            "day": "Friday",
+            "time": "1:00 PM - 2:30 PM",
+            "subject": "Cloud Computing",
+            "room": "Room E505"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Student 6",
+        "schedule": [
+          {
+            "day": "Monday",
+            "time": "1:00 PM - 2:30 PM",
+            "subject": "User Experience Design",
+            "room": "Room F606"
+          },
+          {
+            "day": "Wednesday",
+            "time": "1:00 PM - 2:30 PM",
+            "subject": "Artificial Intelligence",
+            "room": "Room F606"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Student 7",
+        "schedule": [
+          {
+            "day": "Tuesday",
+            "time": "10:45 AM - 12:15 PM",
+            "subject": "System Administration",
+            "room": "Room G707"
+          },
+          {
+            "day": "Thursday",
+            "time": "1:00 PM - 2:30 PM",
+            "subject": "Blockchain",
+            "room": "Room G707"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Student 8",
+        "schedule": [
+          {
+            "day": "Wednesday",
+            "time": "1:00 PM - 2:30 PM",
+            "subject": "Data Structures",
+            "room": "Room H808"
+          },
+          {
+            "day": "Friday",
+            "time": "9:00 AM - 10:30 AM",
+            "subject": "Internet of Things",
+            "room": "Room H808"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Student 9",
+        "schedule": [
+          {
+            "day": "Monday",
+            "time": "10:45 AM - 12:15 PM",
+            "subject": "Web Security",
+            "room": "Room I909"
+          },
+          {
+            "day": "Tuesday",
+            "time": "1:00 PM - 2:30 PM",
+            "subject": "Software Testing",
+            "room": "Room I909"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Student 10",
+        "schedule": [
+          {
+            "day": "Thursday",
+            "time": "10:45 AM - 12:15 PM",
+            "subject": "Data Mining",
+            "room": "Room J1010"
+          },
+          {
+            "day": "Friday",
+            "time": "9:00 AM - 10:30 AM",
+            "subject": "Mobile Security",
+            "room": "Room J1010"
+          }
+        ]
+      }
+    ]
   }
 }
