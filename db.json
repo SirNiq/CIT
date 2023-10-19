@@ -1,69 +1,11 @@
 {
-  "class": [
+  "posts": [
     {
-      "Information Technology Class",
-      "students": [
-        {
-          "id": 1,
-          "name": "Student 1",
-          "schedule": "Monday, 9:00 AM - 10:30 AM: Programming\nTuesday, 10:45 AM - 12:15 PM: Database Management",
-          "room": "Room A101"
-        },
-        {
-          "id": 2,
-          "name": "Student 2",
-          "schedule": "Monday, 9:00 AM - 10:30 AM: Web Development\nWednesday, 9:00 AM - 10:30 AM: Networking",
-          "room": "Room B202"
-        },
-        {
-          "id": 3,
-          "name": "Student 3",
-          "schedule": "Tuesday, 1:00 PM - 2:30 PM: Software Engineering\nThursday, 9:00 AM - 10:30 AM: Cybersecurity",
-          "room": "Room C303"
-        },
-        {
-          "id": 4,
-          "name": "Student 4",
-          "schedule": "Wednesday, 10:45 AM - 12:15 PM: Mobile App Development\nFriday, 10:45 AM - 12:15 PM: Data Analysis",
-          "room": "Room D404"
-        },
-        {
-          "id": 5,
-          "name": "Student 5",
-          "schedule": "Thursday, 9:00 AM - 10:30 AM: Algorithms\nFriday, 1:00 PM - 2:30 PM: Cloud Computing",
-          "room": "Room E505"
-        },
-        {
-          "id": 6,
-          "name": "Student 6",
-          "schedule": "Monday, 1:00 PM - 2:30 PM: User Experience Design\nWednesday, 1:00 PM - 2:30 PM: Artificial Intelligence",
-          "room": "Room F606"
-        },
-        {
-          "id": 7,
-          "name": "Student 7",
-          "schedule": "Tuesday, 10:45 AM - 12:15 PM: System Administration\nThursday, 1:00 PM - 2:30 PM: Blockchain",
-          "room": "Room G707"
-        },
-        {
-          "id": 8,
-          "name": "Student 8",
-          "schedule": "Wednesday, 1:00 PM - 2:30 PM: Data Structures\nFriday, 9:00 AM - 10:30 AM: Internet of Things",
-          "room": "Room H808"
-        },
-        {
-          "id": 9,
-          "name": "Student 9",
-          "schedule": "Monday, 10:45 AM - 12:15 PM: Web Security\nTuesday, 1:00 PM - 2:30 PM: Software Testing",
-          "room": "Room I909"
-        },
-        {
-          "id": 10,
-          "name": "Student 10",
-          "schedule": "Thursday, 10:45 AM - 12:15 PM: Data Mining\nFriday, 9:00 AM - 10:30 AM: Mobile Security",
-          "room": "Room J1010"
-        }
-      ]
+      "id": 1,
+      "title": "hello"
     }
-  ]
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
