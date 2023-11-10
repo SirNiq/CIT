@@ -13,12 +13,7 @@
 
     <script>
         const firebaseConfig = {
-            apiKey: "AIzaSyCUCRsva2faxZ4wbuy6X0ElGGi2oqNmx1Q",
-            authDomain: "citsample-f366b.firebaseapp.com",
-            projectId: "citsample-f366b",
-            storageBucket: "citsample-f366b.appspot.com",
-            messagingSenderId: "131360607107",
-            appId: "1:131360607107:web:8e0af407f8d835e8f044b6"
+            // Your Firebase config here
         };
 
         firebase.initializeApp(firebaseConfig);
@@ -30,7 +25,7 @@
         const subjectsRef = db.ref('Subjects');
 
         // Function to retrieve and format data as JSON for all categories
-        function getDataAsJSON() {
+        function getDataAsJSON(responseCallback) {
             const data = {
                 Students: [],
                 Teachers: [],
@@ -44,16 +39,20 @@
                     subjectsRef.once('value', (subjectSnapshot) => {
                         data.Subjects.push(subjectSnapshot.val());
 
-                        // Display the JSON data in a <pre> element
-                        const jsonDataElement = document.getElementById('jsonData');
-                        jsonDataElement.textContent = JSON.stringify(data, null, 2);
+                        // Pass the JSON data to the callback function
+                        responseCallback(JSON.stringify(data, null, 2));
                     });
                 });
             });
         }
 
         // Call the function to retrieve and display the data when the page loads
-        window.addEventListener('load', getDataAsJSON);
+        window.addEventListener('load', function() {
+            getDataAsJSON(function(jsonData) {
+                const jsonDataElement = document.getElementById('jsonData');
+                jsonDataElement.textContent = jsonData;
+            });
+        });
     </script>
 </body>
 </html>
